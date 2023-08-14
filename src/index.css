@@ -29,12 +29,12 @@
         --keypad-bg: hsl(0, 5%, 81%);
 
         /* Keys, buttons */
-        --key-bg: hsl(185, 42%, 37%);
-        --key-shadow: hsl(185, 58%, 25%);
+        --func-key-bg: hsl(185, 42%, 37%);
+        --func-key-shadow: hsl(185, 58%, 25%);
         --equal-key-bg: hsl(25, 98%, 40%);
         --equal-key-shadow: hsl(25, 99%, 27%);
-        --func-key-bg: hsl(45, 7%, 89%);
-        --func-key-shadow: hsl(35, 11%, 61%);
+        --key-bg: hsl(45, 7%, 89%);
+        --key-shadow: hsl(35, 11%, 61%);
 
         /* Text */
         --dark--text-color: hsl(60, 10%, 19%);
@@ -84,4 +84,17 @@
     main[data-theme="theme3"] input[type=range]::-webkit-slider-thumb{
         background: hsl(176, 100%, 44%);
     }
+
+    /* main[data-theme="theme1"] h1, p, option, label{
+       color:  var(--white-text-color);
+    }
+    main[data-theme="theme2"] h1, p, option, label{
+       color:  var(--dark--text-color);
+    }
+    main[data-theme="theme3"] h1, p, option, label{
+       color:  var(--light-yellow-text-color);
+    }
+    main[data-theme="theme3"] p[class="equal-btn"]{
+        color: var(--dark--text-color);
+    } */
 }

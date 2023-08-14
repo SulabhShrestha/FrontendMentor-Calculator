@@ -1,12 +1,15 @@
 
+
 import './App.css';
 import Calculator from './components/Calculator';
+import ThemeProvider, { ThemeContext } from './context/ThemeProvider';
 
 function App() {
+
   return (
-    <main className="App h-[100vh]" data-theme="theme1">
-      <Calculator />
-    </main>
+    <ThemeProvider>
+        <Calculator />
+    </ThemeProvider>
   );
 }
 
