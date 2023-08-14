@@ -60,4 +60,28 @@
         --dark--text-color: hsl(198, 20%, 13%);
         --white-text-color: hsl(0, 0%, 100%);
     }
+
+    input[type=range]::-moz-range-thumb{
+        border: var(--keypad-bg);
+    }
+    
+    main[data-theme="theme1"] input[type=range]::-moz-range-thumb{
+        background: hsl(6, 63%, 50%);
+    }
+    main[data-theme="theme2"] input[type=range]::-moz-range-thumb{
+        background: hsl(25, 98%, 40%);
+    }
+    main[data-theme="theme3"] input[type=range]::-moz-range-thumb{
+        background: hsl(176, 100%, 44%);
+    }
+
+    main[data-theme="theme1"] input[type=range]::-webkit-slider-thumb{
+        background: hsl(6, 63%, 50%);
+    }
+    main[data-theme="theme2"] input[type=range]::-webkit-slider-thumb{
+        background: hsl(25, 98%, 40%);
+    }
+    main[data-theme="theme3"] input[type=range]::-webkit-slider-thumb{
+        background: hsl(176, 100%, 44%);
+    }
 }
