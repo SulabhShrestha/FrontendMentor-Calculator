@@ -24,7 +24,7 @@ function Keypad() {
   ];
 
   const defaultBtnTheme =
-    "border-b-[3px] border-key-shadow rounded-md ";
+    "border-b-[3px] border-key-shadow rounded-md cursor-pointer";
   return (
     <div className="calculator grid grid-cols-4 grid-rows-4 gap-2 bg-keypad p-4 rounded-md text-2xl font-bold ">
       {keys.map((key) => (

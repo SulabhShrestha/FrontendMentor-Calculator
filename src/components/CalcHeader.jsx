@@ -25,7 +25,7 @@ function CalcHeader() {
           list="markers"
           min={1}
           max={3}
-          className="appearance-none h-5 w-12 bg-screen rounded-full outline-none py-2"
+          className="appearance-none h-5 w-12 bg-screen rounded-full outline-none py-2 cursor-pointer"
           value={currentTheme}
           onChange={(e) => setCurrentTheme(e.target.value)}
         />

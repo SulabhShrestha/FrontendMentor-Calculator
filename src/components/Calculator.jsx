@@ -9,7 +9,7 @@ function Calculator() {
   return (
     <main className="App h-[100vh]" data-theme={`theme${currentTheme}`}>
       <div className="calc-btn bg-main h-full flex flex-col items-center justify-center">
-        <div className="w-sm">
+        <div className="max-w-sm">
           <CalcHeader />
           <Display />
           <Keypad />

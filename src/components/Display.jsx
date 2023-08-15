@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeProvider";
+import { CalcValueContext } from "../context/CalcValueProvider";
 
 function Display() {
   const { currentTheme } = useContext(ThemeContext);
+  const {calcValue} = useContext(CalcValueContext);
 
   const textColor =
     currentTheme == 1
@@ -12,8 +14,8 @@ function Display() {
       : "text-light-yellow";
 
     return (
-      <div className="display bg-screen rounded-md my-4 text-3xl font-bold py-3 px-2">
-        <p className={`text-right ${textColor}`}>231,000</p>
+      <div className="display bg-screen rounded-md my-4 text-3xl font-bold py-3 px-2 overflow-scroll">
+        <p className={`text-right  ${textColor}`}>{calcValue}</p>
       </div>
     );
 }
