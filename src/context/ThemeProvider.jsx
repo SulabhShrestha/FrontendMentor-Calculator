@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 const ThemeContext = createContext(null);
 
 function ThemeProvider({ children }) {
-  const [currentTheme, setCurrentTheme] = useState(3);
+  const [currentTheme, setCurrentTheme] = useState(1);
   return (
     <ThemeContext.Provider value={{ currentTheme, setCurrentTheme }}>
       {children}

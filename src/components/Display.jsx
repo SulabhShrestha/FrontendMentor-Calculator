@@ -14,8 +14,8 @@ function Display() {
       : "text-light-yellow";
 
     return (
-      <div className="display bg-screen rounded-md my-4 text-3xl font-bold py-3 px-2 overflow-scroll">
-        <p className={`text-right  ${textColor}`}>{calcValue}</p>
+      <div className="display bg-screen rounded-md my-4 text-3xl font-bold flex items-center justify-end px-2 overflow-x-scroll h-16">
+        <p className={textColor}>{calcValue}</p>
       </div>
     );
 }

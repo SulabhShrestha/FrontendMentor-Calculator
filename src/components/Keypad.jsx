@@ -24,22 +24,21 @@ function Keypad() {
   ];
 
   const defaultBtnTheme =
-    "border-b-[3px] border-key-shadow rounded-md cursor-pointer";
+    "border-b-[3px] border-key-shadow rounded-md cursor-pointer bg-key";
   return (
     <div className="calculator grid grid-cols-4 grid-rows-4 gap-2 bg-keypad p-4 rounded-md text-2xl font-bold ">
       {keys.map((key) => (
         <CalcKey
           title={key}
           key={key}
-          className={`
-              ${defaultBtnTheme}                    
+          className={`                   
               ${key.includes("RESET") || key.includes("=") ? "col-span-2" : ""}
               ${
                 key.includes("=")
                   ? "bg-equal-key-background"
                   : key.includes("DEL") || key.includes("RESET")
                   ? "bg-func-key-background text-sm py-2 px-4"
-                  : "bg-key "
+                  : defaultBtnTheme
               }
               
             `}
